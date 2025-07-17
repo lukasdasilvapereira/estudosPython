@@ -11,4 +11,14 @@ print(employee_file.read())
 #print(employee_file.readlines())
 #print(employee_file.readlines()[1])
 
+for employee in employee_file.readlines():
+    print(employee)
+
+employees = open("reading_files/employees.txt", "a") ## ADD TEXT TO THE FINAL
+
+employees.write("\nToby - Human Resources")
+
+employees.close()
+    
 employee_file.close()
+
